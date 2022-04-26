@@ -1,38 +1,58 @@
-.App {
+.main .title {
+  font-size: 20px;
   text-align: center;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main .container {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  width: 98%;
+  height: 94vh;
+  margin: 0 auto;
+  z-index: 9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main .container .left-panel {
   display: flex;
   flex-direction: column;
+  border-right: 1px solid black;
+  width: 30%;
+  height: 100%;
+}
+
+.main .container .left-panel .user-profile {
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 25%;
+}
+
+.main .container .left-panel .manage-todo-list {
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 7%;
+}
+
+.main .new-list-modal {
+  position: fixed;
+  top: 20%;
+  left: 27%;
+  width: 600px;
+  height: 350px;
+  z-index: 99;
+  background-color: rgba(236, 236, 236, 1);
+  box-shadow: 1px 1px 2px;
+}
+
+.hide {
+  opacity: 0.2;
+}
+
+.main .container .right-panel {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

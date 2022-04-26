@@ -1,0 +1,106 @@
+.manage-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 2%;
+}
+
+.manage-list .new-list-btn {
+    margin: 1%;
+    color: rgba(0, 200, 0, 1);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.manage-list .btns {
+    display: flex;
+    flex-direction: row;
+    margin: 1% 3%;
+}
+
+.manage-list .btns span {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.new-list-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+    height: 100%;
+}
+
+.new-list-details .input-desc {
+    margin-top: 2%;
+    font-size: 16px;
+    width: 90%;
+    height: 150px;
+    box-sizing: border-box;
+    resize: none;
+    overflow: scroll
+}
+
+.new-list-btns {
+    margin: 4%;
+    float: right;
+}
+
+.new-list-btns button {
+    margin: 5px;
+    background-color: rgba(0, 200, 0, 1);
+    color: white;
+    width: 100px;
+}
+
+.todo-list-item {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.todo-list-item:nth-child(odd){
+    background-color: beige;
+}
+
+.todo-list-item:nth-child(even){
+    background-color: beige;
+}
+
+.todo-list-item .todo-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.todo-list-item .status-drpdown {
+    margin-top: 2%;
+    margin-left: 40%;
+    float: right;
+    width: 100px;
+    color: white;
+}
+
+.todo-list-item .edit-btn{
+    float: right;
+    margin: 2%;
+}
+
+.todo-list-item .pending {
+    background-color: rgba(250, 0, 0, 0.5);
+}
+
+.todo-list-item .complete {
+    background-color: rgba(0, 200, 0, 0.5);
+}
+
+
+
+
+
+
